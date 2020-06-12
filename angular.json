@@ -24,6 +24,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/luna-green/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rest-app"
+    }
+  },
+  "defaultProject": "rest-app",
+  "cli": {
+    "analytics": "6fd29b25-b7c8-40d6-8847-cabd42c7c57b"
+  }
 }

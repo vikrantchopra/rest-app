@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "testID": "BMA60001",
+        "testStep": "abcd",
+        "description": "my first test",
+        "testStatus": "Pass",
+        "screenshot": "asasasas",
+        "date": "06-09-2020",
+        "time": "20:22:53",
+        "cycle": "Cycle3",
+        "runtime": "123",
+        "build": "1.2.1"
+    },
+    {
+        "id": 2,
+        "testID": "BMA60002",
+        "testStep": "dcba",
+        "description": "another test",
+        "testStatus": "Pass",
+        "screenshot": "not there",
+        "date": "06-12-2020",
+        "time": "12:53:55",
+        "cycle": "Cycle5",
+        "runtime": "12345",
+        "build": "1.2.2"
+    },
+    {
+        "id": 3,
+        "testID": "BMA60003",
+        "testStep": "abracadabra",
+        "description": "no description",
+        "testStatus": "Pass/Fail",
+        "screenshot": "Not required",
+        "date": "06-12-2020",
+        "time": "13:18:24",
+        "cycle": "Cycle10",
+        "runtime": "500",
+        "build": "1.2.3"
+    }
+]
