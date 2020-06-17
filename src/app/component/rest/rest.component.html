@@ -1,36 +1,33 @@
 <h3 class="first">Basic</h3>
 
 <p-accordion>
-    <p-accordionTab header="{{restdata[0].testID}}">
-        <p-table [value]="restdata">
-            <ng-template pTemplate="header">
-                <tr>
-                    <th>Test ID</th>
-                    <th>Test Step</th>
-                    <th>Description</th>
-                    <th>Test Status</th>
-                    <th>Screenshot</th>
-                    <th>Cycle</th>
-                </tr>
-            </ng-template>
-            <ng-template pTemplate="body" let-data>
-                <tr>
-                    <td>{{data.testID}}</td>
-                    <td>{{data.testStep}}</td>
-                    <td>{{data.description}}</td>
-                    <td>{{data.testStatus}}</td>
-                    <td>{{data.screenshot}}</td>
-                    <td>{{data.cycle}}</td>
-                </tr>
-            </ng-template>
-        
-        </p-table>
-    </p-accordionTab>
-    <p-accordionTab header="Header 2">
-        Content 2
-    </p-accordionTab>
-    
+  <p-accordionTab *ngFor="let tab of tabHeaders" header="{{tab}}">
+    <p-table [value]="restdata">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Test ID</th>
+          <th>Test Step</th>
+          <th>Description</th>
+          <th>Test Status</th>
+          <th>Screenshot</th>
+          <th>Cycle</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-data>
+        <tr *ngIf="data.testID == tab">
+          <td>{{data.testID}}</td>
+          <td>{{data.testStep}}</td>
+          <td>{{data.description}}</td>
+          <td>{{data.testStatus}}</td>
+          <td>{{data.screenshot}}</td>
+          <td>{{data.cycle}}</td>
+        </tr>
+      </ng-template>
+
+    </p-table>
+  </p-accordionTab>
+  <p-accordionTab header="Header 2">
+    Content 2
+  </p-accordionTab>
+
 </p-accordion>
-
-
-
